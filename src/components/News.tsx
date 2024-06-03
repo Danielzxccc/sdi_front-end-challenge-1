@@ -1,6 +1,6 @@
 import { Authors, News, baseUrl } from '../App'
 import { RiShareForwardLine } from 'react-icons/ri'
-import { getDay, getMonth } from '../utils'
+import { getDate, getMonth } from '../utils'
 
 type NewsCardProps = {
   data: News
@@ -23,7 +23,7 @@ function NewsCard({ data, authors }: NewsCardProps) {
           {/* date */}
           <div className='skew-x-[10deg]'>
             <h2 className='text-3xl font-semibold mb-[-10px]'>
-              {getDay(data.created_at)}
+              {getDate(data.created_at)}
             </h2>
             <h4 className='text-sm'>
               {getMonth(data.created_at).toUpperCase()}
@@ -47,7 +47,7 @@ function NewsCard({ data, authors }: NewsCardProps) {
         </div>
         <hr className='border border-gray-200' />
         <h4 className='text-base text-[#EB0A1E]'>{author?.name}</h4>
-        <h2 className='font-bold md:text-4xl text-3xl mb-5'>${data.title}</h2>
+        <h2 className='font-bold md:text-4xl text-3xl mb-5'>{data.title}</h2>
         <p className='mb-4'>{data.body}</p>
 
         <a

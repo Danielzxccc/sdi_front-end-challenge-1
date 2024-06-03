@@ -1,3 +1,4 @@
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 interface PaginationProps {
   currentPage: number
   totalPages: number
@@ -52,9 +53,9 @@ function Pagination({
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className='px-3 py-1 border rounded-md bg-white hover:bg-gray-200 disabled:opacity-50'
+        className='p-2 border bg-white hover:bg-gray-200 disabled:opacity-50'
       >
-        &lt;
+        <IoIosArrowBack />
       </button>
       {getPageNumbers().map((page, index) =>
         typeof page === 'number' ? (
@@ -81,9 +82,9 @@ function Pagination({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className='px-3 py-1 border rounded-md bg-white hover:bg-gray-200 disabled:opacity-50'
+        className='p-2 border bg-white hover:bg-gray-200 disabled:opacity-50'
       >
-        &gt;
+        <IoIosArrowForward />
       </button>
     </div>
   )

@@ -18,6 +18,6 @@ export function getMonth(dateString: string) {
   return monthName
 }
 
-export function getDay(dateString: string) {
-  return new Date(dateString).getDay()
+export function getDate(dateString: string) {
+  return new Date(dateString).getDate()
 }
