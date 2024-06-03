@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+**README.md**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SDI Front-End Challenge 1
 
-Currently, two official plugins are available:
+This project is a React application built with TypeScript for type safety and TailwindCSS for utility-first styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+* **React** 
+* **TypeScript** 
+* **TailwindCSS**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Deployed Link
 
-- Configure the top-level `parserOptions` property like this:
+You can view the live application at: [https://sdi-front-end-challenge-1-one.vercel.app/](https://sdi-front-end-challenge-1-one.vercel.app/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Local Development
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run the project locally, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Danielzxccc/sdi_front-end-challenge-1.git
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   cd your-repo-name  # Navigate to the project directory
+   npm install
+   ```
+
+3. **Start Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+This will start the development server, typically accessible at http://localhost:5174/ in your web browser.
