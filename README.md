@@ -25,7 +25,7 @@ To run the project locally, follow these steps:
 
 2. **Install Dependencies:**
    ```bash
-   cd your-repo-name  # Navigate to the project directory
+   cd sdi_front-end-challenge-1  # Navigate to the project directory
    npm install
    ```
 
